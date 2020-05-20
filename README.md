@@ -162,18 +162,7 @@ df
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 
 <table border="1" class="dataframe">
   <thead>
@@ -2257,18 +2246,7 @@ Polarity
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 
 <table border="1" class="dataframe">
   <thead>
@@ -2483,18 +2461,7 @@ Overall_Results_Chart.dropna().sort_values(ascending = True, by = ["Overall Resu
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 
 <table border="1" class="dataframe">
   <thead>
