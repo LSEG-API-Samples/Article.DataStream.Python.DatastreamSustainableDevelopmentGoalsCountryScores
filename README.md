@@ -64,7 +64,7 @@ DSWS_username.close()
 DSWS_password.close()
 ```
 
-$$ \\ $$
+ 
 For full replication, note that the version of libraries used
 
 
@@ -87,7 +87,7 @@ for i,j in zip(["np", "pd", "openpyxl"], [np, pd, openpyxl]):
     The openpyxl library imported in this code is version: 3.0.3
     
 
-$$ \\ $$
+ 
 The 'datetime' library is a Python-built-in library, therefore it does not have a specific version number.
 
 
@@ -144,10 +144,10 @@ def Point(value, # ' value ' as an integer or float between 0 and 1 (inclusive)
             return 12 - result
 ```
 
-$$ \\ $$
+ 
 ### Collect Data
 
-$$ \\ $$
+ 
 We first need to collect the individual country series codes to ping DataStream with.
 There are a great many of them, we thus collect them from the comma-separated values (csv) file 'ESG-DS.csv'.
 
@@ -2089,7 +2089,7 @@ columns_in_Country_Values_Table_not_in_df = list(np.setdiff1d(Country_Values_Tab
                                                               df.columns))
 ```
 
-$$ \\ $$
+ 
 #### Now we can collect our data from DSWS
 
 
@@ -2122,7 +2122,7 @@ for j in range(len(df.columns)):
 Country_Values_Table
 ```
 
-$$ \\ $$
+ 
 ## Pickle
 
 It is quite time consuming to request DSWS for all these codes. Let's save our progress this far using [Pickle](https://pythonprogramming.net/python-pickle-module-save-objects-serialization/):
@@ -2146,7 +2146,7 @@ The cell bellow can be run to load these variables back into the kernel
 # pickle_in.close() # We ought to close the file we opened to allow any other programs access if they need it.
 ```
 
-$$ \\ $$
+ 
 ## Sorting Out Our Data
 
 The use of ' Country_Values_Table2 ' is only there to deliminate between before and after our 'pickling':
@@ -2190,7 +2190,7 @@ Country_Values_Table2["16.1.2.2"] = Country_Values_Table2["16.1.2"] / Country_Va
 Country_Values_Table2 = Country_Values_Table2.drop(columns = ["16.1.2", "16.1.2.1"])
 ```
 
-$$ \\ $$
+ 
 ## Country Points Table
 
 We can now apply the points system defined above to our data in ' Country_Values_Table2 '
@@ -2237,7 +2237,7 @@ for j in range(len(Country_Values_Table2.columns)):
 Country_Points_Table2.head()
 ```
 
-$$ \\ $$
+ 
 ## Polarity
 
 Certain data-points are better when lower (e.g.: poverty levels), others better when heigher (e.g.: availability of affordable and clean energy). We thus use a Polarity array to denote when which rule is applied.
@@ -2362,7 +2362,7 @@ for i in range(len(Country_Points_Table2.columns)):
             Polarity_temp["Country Points Table full"][j] = "u.s.e.d"
 ```
 
-$$ \\ $$
+ 
 ## Polarised Table
 
 We may now apply polarity rules to our data-points
@@ -2458,7 +2458,7 @@ SDG_Aggregate_Ranks[("Overall", "Scores Available")] = list_of_scores
 SDG_Aggregate_Ranks[("Overall", "Median Points (Higher is better)")] = country_median
 ```
 
-$$ \\ $$
+ 
 # Overall Results Chart
 
 We can now proceed in creating a horizontal bar graph to overview results on a country level
