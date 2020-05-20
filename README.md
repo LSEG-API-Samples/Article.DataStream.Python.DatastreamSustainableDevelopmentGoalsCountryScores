@@ -2564,3 +2564,5 @@ fig = go.Figure(go.Bar(x = dataf["Overall Results"],
 
 fig.show()
 ```
+
+![pngPoster](images/Poster.png "Data item browser")
