@@ -5,3 +5,13 @@ $$ \ $$
 This article attempts to lay a framework to allow any investor/agent to collect, analyse and gather insight into countries' ESG metrics at granular and macro-levels. It reflects the DataStream Sustainable Development Goals Country Scores Excel capability.
 $$ \\ $$
 The file 'ESG-DS.csv' will be needed to collect individual country series codes from our ESG database.
+
+$$ \\ $$
+## Get Coding
+
+### Import Libraries
+math, statistics, numpy, pandas and openpyxl are needed for dataset manipulation and their statistical and mathematical manipulations.
+
+import math
+import statistics
+import numpy as np
