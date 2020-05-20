@@ -2547,7 +2547,7 @@ ax1 = Overall_Results_Chart.dropna().sort_values(ascending = True,
 ```
 
 
-![png](output_62_0.png)
+![png60](images/output_62_0.png "Data item browser")
 
 
 The cell bellow produces the same chart via Plotly. Plotly offers a range of advantaged and is more dynamic than what is show this far. Note that in order to use plotly you will need the jupyterlab-chart-editor and @jupyterlab/plotly-extension extensions
