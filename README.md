@@ -95,7 +95,7 @@ The 'datetime' library is a Python-built-in library, therefore it does not have 
 from datetime import date
 ```
 
-$ \\ $
+
 ### Setup Functions
 
 We rate each ESG category on a scale from 1 to 10 as per the function defined bellow
