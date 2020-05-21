@@ -145,14 +145,10 @@ def Point(value, # ' value ' as an integer or float between 0 and 1 (inclusive)
 ```
 
  
+
 ### Collect Data
 
 
-
-$$ \\ $$
-### Collect Data
-
-$$ \\ $$
 We first need to collect the individual country series codes to ping DataStream with.
 There are a great many of them, we thus collect them from the comma-separated values (csv) file 'ESG-DS.csv'.
 
