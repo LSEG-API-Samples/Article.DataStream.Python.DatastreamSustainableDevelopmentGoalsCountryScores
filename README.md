@@ -2234,7 +2234,7 @@ Country_Points_Table1.head()
 ```python
 Country_Points_Table2 = pd.DataFrame(index = Country_Values_Table2.index)
 
-# NOTE THAT THIS IS NOT THE SAME WRANKING AS IN THE EXCEL SHEET, BUT IT IS A MORE MATHEMATICALLY COMMON AND LESS AMBIGUOUS ONE
+
 for j in range(len(Country_Values_Table2.columns)):
     Country_Points_Table2_column_j = [] # Create a list to be populated
     for i in range(len(Country_Values_Table2.index)):
